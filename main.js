@@ -39,7 +39,7 @@ async function Papeleria() {
 			etiqueta += "<p class='on'>$" + fileJson[i].dicount + "</p>"
 		}
 		etiqueta += "$" + fileJson[i].PriceProduct + "</legend>"
-		etiqueta += "<img src='" + fileJson[i].url_img + "' alt='" + fileJson[i].url_img + "'>"
+		etiqueta += "<img src='https://github.com/hasael014/los3.netlify.app/blob/Master/img/" + fileJson[i].url_img + "?raw=true' alt='" + fileJson[i].url_img + "'>"
 		if (!fileJson[i].new) {
 			etiqueta += ""
 		} else {
@@ -153,7 +153,7 @@ async function Servicios() {
 	for (let i1 = 0; i1 < npestañas; i1++) {
 		texthtml += "<section class='serv_producto'>"
 		texthtml += "<fieldset class='serv_fieldset'>"
-		texthtml += "<img src='" + fileJson[i1].UrlImg + "' alt='" + fileJson[i1].UrlImg + "'>"
+		texthtml += "<img src='https://github.com/hasael014/los3.netlify.app/blob/Master/img/" + fileJson[i1].UrlImg + "?raw=true' alt='" + fileJson[i1].UrlImg + "'>"
 		texthtml += "<h3>"
 		texthtml += fileJson[i1].ServisName
 		texthtml += "</h3>"
@@ -326,4 +326,4 @@ async function Mas() {
 
 barnav()
 
-Servicios()
+Papeleria()
