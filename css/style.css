@@ -73,7 +73,7 @@ h3 {
 }
 
 .img_fondo {
-    background-image: url(/img/pizarron.jpg);
+    background-image: url(/pizarron1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 45rem;
@@ -166,7 +166,7 @@ main {
 #Page {
     display: grid;
     justify-content: center;
-    row-gap: 7rem;
+    row-gap: 11rem;
     max-width: 980px;
     margin: 0 auto;
     padding-top: 5rem;
@@ -274,9 +274,10 @@ section.serv_producto {
     background-color: #ff0000;
     color: var(--blanco);
     padding: .5rem 3rem;
-    margin: -1.7rem 0 0 17%;
+    margin: -1.5rem 0 0 27%;
     font-family: 'Comic Neue', cursive;
     clip-path: polygon(5% 0, 100% 0, 95% 15%, 100% 30%, 95% 45%, 100% 60%, 95% 75%, 100% 90%, 95% 100%, 100% 100%, 0 100%, 0% 100%, 5% 90%, 0 75%, 5% 60%, 0 45%, 5% 30%, 0 15%);
+    transform: rotate(-3deg);
 }
 
 @media (min-width: 980px) {
@@ -302,32 +303,41 @@ section.serv_producto {
         font-size: 1.5rem;
     }
 }
-
-fieldset>img {
+.background-img-prod {
     border-top-left-radius: 4%;
     border-top-right-radius: 4%;
+    width: 20rem;
+    height: 20rem;
+    background-image: url(/back\ prod.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center
+}
+
+.background-img-prod>img{
     width: 100%;
-    height: 100%;
 }
 
 .noo {
     width: 90%;
     position: absolute;
     transform: rotate(-30deg);
-    margin: -9rem 0 0 -.4rem;
+    margin: -12rem 0 0 -.4rem;
     padding: 0;
     font-size: 3rem;
     font-weight: 700;
     background-color: var(--negro);
     border-radius: 2rem;
-    opacity: 0.8;
+    opacity: 0.6;
     color: var(--blanco);
 }
 
 @media (min-width: 980px) {
     .noo {
         font-size: 4rem;
-        margin: -11rem 0 0 0;
+        margin: -10.3rem 0 0 0;
     }
 }
 
@@ -336,25 +346,26 @@ fieldset>img {
     position: absolute;
     margin: -5rem 0 0 -.4rem;
     background-color: var(--primario);
-    width: 90%;
+    width: 93%;
     font-size: 2.5rem;
     font-family: 'Comic Neue', cursive;
     padding: 0;
     border-radius: .3rem;
 }
 
-@media (min-width: 980px) {
+/* @media (min-width: 980px) {
     .new {
         width: 93%;
     }
-}
+} */
 
 h3.nom_prod {
     color: var(--primario);
     /* position: absolute; */
-    margin: -.1rem 0 0 0;
+    margin: 0;
     width: 100%;
     font-size: 1.3rem;
+    /* background-color: var(--secundario); */
 }
 
 @media (min-width: 980px) {

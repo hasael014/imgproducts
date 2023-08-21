@@ -39,7 +39,9 @@ async function Papeleria() {
 			etiqueta += "<p class='on'>$" + fileJson[i].dicount + "</p>"
 		}
 		etiqueta += "$" + fileJson[i].PriceProduct + "</legend>"
-		etiqueta += "<img src='https://github.com/hasael014/los3.netlify.app/blob/Master/img/" + fileJson[i].url_img + "?raw=true' alt='" + fileJson[i].url_img + "'>"
+		etiqueta += "<div class='background-img-prod'>"
+		etiqueta += "<img src='https://github.com/hasael014/img_products/blob/Master/" + fileJson[i].url_img + ".png?raw=true' alt='" + fileJson[i].url_img + "'></div>"
+		// etiqueta += ""
 		if (!fileJson[i].new) {
 			etiqueta += ""
 		} else {
