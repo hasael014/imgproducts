@@ -155,7 +155,7 @@ async function Servicios() {
 	for (let i1 = 0; i1 < npestañas; i1++) {
 		texthtml += "<section class='serv_producto'>"
 		texthtml += "<fieldset class='serv_fieldset'>"
-		texthtml += "<img src='https://github.com/hasael014/los3.netlify.app/blob/Master/img/" + fileJson[i1].UrlImg + "?raw=true' alt='" + fileJson[i1].UrlImg + "'>"
+		texthtml += "<img src='https://github.com/hasael014/img_products/blob/Master/" + fileJson[i1].UrlImg + "?raw=true' alt='" + fileJson[i1].UrlImg + "'>"
 		texthtml += "<h3>"
 		texthtml += fileJson[i1].ServisName
 		texthtml += "</h3>"
@@ -233,38 +233,8 @@ async function Servicios() {
 							texthtml += "</fieldset>"
 						}
 						texthtml += "</fieldset>"
-						texthtml += "<fieldset class='cant_face'>"
-						texthtml += "<legend class='face'>"
-						texthtml += charac.Face[1]
-						texthtml += "</legend>"
-						texthtml += "<fieldset class='colorface'>"
-						texthtml += "<legend class='sheet_face'>"
-						texthtml += charac.SheetSize[i3].SheetColor[0]
-						texthtml += "</legend>"
-						texthtml += "<p>"
-						texthtml += charac.InkColor[0] + " : $" + (charac.SheetSize[i3].SheetPrice.PriceSheetWhite + charac.InkPrice.PriceInkBlack) * 2
-						texthtml += "</p>"
-						texthtml += "<p>"
-						texthtml += charac.InkColor[1] + " : $" + (charac.SheetSize[i3].SheetPrice.PriceSheetWhite + charac.InkPrice.PriceInkColor) * 2
-						texthtml += "</p>"
-						texthtml += "</fieldset>"
-						if (charac.SheetSize[i3].Size === "oficio") {
-							texthtml += ""
-						} else {
-							texthtml += "<fieldset class='colorface1'>"
-							texthtml += "<legend class='sheet_face'>"
-							texthtml += charac.SheetSize[i3].SheetColor[1]
-							texthtml += "</legend>"
-							texthtml += "<p>"
-							texthtml += charac.InkColor[0] + " : $" + (charac.SheetSize[i3].SheetPrice.PriceSheetWhite + charac.InkPrice.PriceInkBlack) * 2
-							texthtml += "</p>"
-							texthtml += "<p>"
-							texthtml += charac.InkColor[1] + " : $" + (charac.SheetSize[i3].SheetPrice.PriceSheetWhite + charac.InkPrice.PriceInkColor) * 2
-							texthtml += "</p>"
-							texthtml += "</fieldset>"
-						}
 					}
-					texthtml += "</fieldset></div>"
+					texthtml += "</div>"
 					texthtml += "</div></div>"
 					if (i3 == 0) {
 						texthtml += " y "
@@ -328,4 +298,4 @@ async function Mas() {
 
 barnav()
 
-Papeleria()
+Servicios()

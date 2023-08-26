@@ -10,12 +10,12 @@
 
 :root {
     --blanco: #ffffff;
-    --negro: #212121;
-    --primario: #ffc107;
-    --secundario: #0097a7;
+    --negro: #272829;
+    --primario: #D8D9DA;
+    --secundario: #61677A;
     --gris-ocuro: #919191;
     --gris-claro: #ebebeb;
-    --rojo: #ff0000;
+    --rojo: #FFF6E0;
 }
 
 html {
@@ -128,6 +128,9 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* position: sticky; */
+    top: 0;
+    /* z-index: 3; */
 }
 
 main {
@@ -160,7 +163,7 @@ main {
 
 .btn:hover {
     background-color: var(--primario);
-    color: var(--blanco);
+    color: var(--secundario);
 }
 
 #Page {
@@ -262,6 +265,12 @@ section.serv_producto {
     margin: 0;
 }
 
+.serv_fieldset>img{
+    width: 29.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
 .serv_fieldset>h3{
     background-color: var(--secundario);
     padding: 1rem 0;
@@ -271,8 +280,8 @@ section.serv_producto {
 
 .legend {
     position: absolute;
-    background-color: #ff0000;
-    color: var(--blanco);
+    background-color: var(--rojo);
+    color: var(--negro);
     padding: .5rem 3rem;
     margin: -1.5rem 0 0 27%;
     font-family: 'Comic Neue', cursive;
@@ -308,9 +317,9 @@ section.serv_producto {
     border-top-right-radius: 4%;
     width: 20rem;
     height: 20rem;
-    background-image: url(/back\ prod.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(/back\ prod1.jpg);
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
     background-size: cover;
     display: flex;
     align-items: center
@@ -365,7 +374,7 @@ h3.nom_prod {
     margin: 0;
     width: 100%;
     font-size: 1.3rem;
-    /* background-color: var(--secundario); */
+     background-color: var(--secundario); 
 }
 
 @media (min-width: 980px) {
@@ -521,7 +530,8 @@ flotante
 
 @media (min-width: 980px) {
     .cant_face {
-        width: 49%;
+        /* width: 60%; */
+        width: 31rem;
     }
 
     .cant_face_carta,
@@ -545,6 +555,13 @@ flotante
     border: solid .2rem var(--negro);
     border-bottom: none;
     width: auto;
+}
+
+@media (min-width: 980px) {
+    .colorface,
+    .colorface1{
+        width: 100%;
+    }
 }
 
 .sheet_face {
