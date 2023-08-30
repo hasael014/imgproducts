@@ -68,10 +68,92 @@ h3 {
     justify-content: flex-end;
 }
 
+.alinear-derecha-centro{
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .alinear-derecha-abajo {
     align-items: flex-end;
 }
 
+.alinear-izquierda-centro{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*
+estilos para el header
+estilos para la version movil
+*/
+
+.header{
+    color: var(--blanco);
+    font-family: gis;
+    background-image: url(/pizarron1.jpg);
+    background-size: cover;
+    position: relative;
+    height: 8rem;
+}
+
+.header>h1{
+    font-size: 2.5rem;
+    margin-right: 3%;
+}
+
+.logo-header{
+    width: 8rem;
+    height: 9rem;
+    left: 0;
+    transform: rotate(-10deg);
+}
+
+.logo-header>img{
+    width: 100%;
+}
+
+/*
+estilos para la version de pc
+*/
+
+@media (min-width: 768px) {
+    /*.header{
+        padding-block: .5rem;
+    }*/
+
+    .logo-header{
+        width: 10rem;
+        height: 10rem;
+        left: 0;
+        transform: rotate(-10deg);
+    }
+}
+
+/*
+estilos para las img de los promo
+*/
+
+.promo{
+    display: flex;
+    justify-content: center;
+    background-color: #6e1081;
+}
+
+.img-ofertas{
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .img-ofertas{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/*
 .img_fondo {
     background-image: url(/pizarron1.jpg);
     background-repeat: no-repeat;
@@ -80,8 +162,6 @@ h3 {
     position: relative;
     margin: 0;
     font-family: gis;
-    /*display: none;
-    temporal*/
 }
 
 .logo {
@@ -103,8 +183,6 @@ h3 {
 
 .cont_img_fondo {
     position: absolute;
-    /* background-color: rgba(0, 0, 0, .5);
-    background-color: rgb(0 0 0 / 55%); */
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -120,7 +198,11 @@ h3 {
 .cont_img_fondo h1,
 .cont_img_fondo p {
     color: var(--blanco);
-}
+}*/
+
+/*
+estilos para la barra de navegacion
+*/
 
 .barra_sub_titulo {
     width: 100%;
@@ -171,8 +253,8 @@ main {
     justify-content: center;
     row-gap: 11rem;
     max-width: 980px;
-    margin: 0 auto;
-    padding-top: 5rem;
+    margin: 2rem auto;
+    padding-block: 3rem;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -292,9 +374,7 @@ section.serv_producto {
 @media (min-width: 980px) {
     .legend {
         padding: .5rem 3rem;
-        font-size: 3rem;
-        margin: 0 0 0 55%;
-        transform: rotate(45deg);
+        font-size: 2.2rem;
     }
 }
 
