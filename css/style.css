@@ -16,6 +16,7 @@
     --gris-ocuro: #919191;
     --gris-claro: #ebebeb;
     --rojo: #FFF6E0;
+    --new: #ff0000;
 }
 
 html {
@@ -249,13 +250,13 @@ main {
 }
 
 #Page {
-    display: grid;
+    display: flex;
     justify-content: center;
     row-gap: 11rem;
     max-width: 980px;
     margin: 2rem auto;
     padding-block: 3rem;
-    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
 }
 
 @media (min-width: 980px) {
@@ -287,12 +288,14 @@ main {
 }
 
 #servicios {
-    display: grid;
+    display: flex;
     justify-content: center;
-    row-gap: 7rem;
+    /* row-gap: 7rem; */
     max-width: 980px;
     margin: 0 auto;
     padding-top: 2.5rem;
+    flex-wrap: wrap;
+    gap: 5rem;
 }
 
 @media (min-width: 980px) {
@@ -314,15 +317,15 @@ section.producto {
 section.serv_producto {
     background-color: var(--primario);
     margin: 0 auto;
-    width: 100%;
+    width: auto;
     border-radius: 1rem;
 }
 
-@media (min-width: 980px) {
+/* @media (min-width: 980px) {
     section.serv_producto{
         width: 100%
     }
-}
+} */
 
 .fieldset {
     border: none;
@@ -343,14 +346,15 @@ section.serv_producto {
 .serv_fieldset {
     border: none;
     padding: 0;
-    width: 100%;
+    width: 25rem;
     margin: 0;
 }
 
 .serv_fieldset>img{
-    width: 29.5rem;
+    width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    margin: 0 auto;
 }
 
 .serv_fieldset>h3{
@@ -431,10 +435,10 @@ section.serv_producto {
 }
 
 .new {
-    color: var(--rojo);
+    color: var(--blanco);
     position: absolute;
     margin: -5rem 0 0 -.4rem;
-    background-color: var(--primario);
+    background-color: var(--new);
     width: 93%;
     font-size: 2.5rem;
     font-family: 'Comic Neue', cursive;
@@ -578,12 +582,12 @@ flotante
     transition: all 1s;
 }
 
-#impresionesoficio:target,
-#impresionescarta:target,
-#copiasoficio:target,
-#copiascarta:target,
-#scaneroficio:target,
-#scanercarta:target {
+#Impresionesoficio:target,
+#Impresionescarta:target,
+#Copiasoficio:target,
+#Copiascarta:target,
+#Escáneroficio:target,
+#Escánercarta:target {
     opacity: 1;
     pointer-events: auto;
 }
@@ -659,4 +663,8 @@ flotante
 .footer {
     text-align: center;
     color: var(--blanco);
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50rem;
+    margin: 0 auto;
 }
