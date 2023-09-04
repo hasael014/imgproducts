@@ -40,7 +40,7 @@ async function Papeleria() {
 		}
 		etiqueta += "$" + fileJson[i].PriceProduct + "</legend>"
 		etiqueta += "<div class='background-img-prod'>"
-		etiqueta += "<img src='https://github.com/hasael014/img_products/blob/Master/" + fileJson[i].url_img + ".png?raw=true' alt='" + fileJson[i].url_img + "'></div>"
+		etiqueta += "<img src='https://github.com/hasael014/img_products/blob/Master/" + fileJson[i].url_img + ".webp?raw=true' alt='" + fileJson[i].url_img + "'></div>"
 		// etiqueta += ""
 		if (!fileJson[i].new) {
 			etiqueta += ""
@@ -298,4 +298,4 @@ async function Mas() {
 
 barnav()
 
-Papeleria()
+Servicios()

@@ -289,21 +289,19 @@ main {
 
 #servicios {
     display: flex;
-    justify-content: center;
-    /* row-gap: 7rem; */
+    justify-content: center; 
     max-width: 980px;
     margin: 0 auto;
     padding-top: 2.5rem;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 2.5rem;
 }
 
-@media (min-width: 980px) {
+/* @media (min-width: 980px) {
     #servicios{
-        grid-template-columns: repeat(3, 1fr);
         gap: 5rem;
     }
-}
+} */
 
 section.producto {
     display: flex;
@@ -316,7 +314,7 @@ section.producto {
 
 section.serv_producto {
     background-color: var(--primario);
-    margin: 0 auto;
+    margin: 0 .5rem;
     width: auto;
     border-radius: 1rem;
 }
